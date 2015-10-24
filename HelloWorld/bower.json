@@ -1,0 +1,12 @@
+{
+	"name": "hello-world-demo",
+	"private": true,
+  "dependencies": {
+    "si-portal-framework": "s-innovations/S-Innovations.PortalFramework"
+  },
+   "exportsOverride": {
+    "si-portal-framework": {
+      "": "dist/src"
+    }
+  }
+}
