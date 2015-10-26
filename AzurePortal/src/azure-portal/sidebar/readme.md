@@ -16,13 +16,13 @@ new AzurePortalSideBarLayout(
     }
 )
 ```
-will look like this when used in a horizontal stackpanel.
+will look like this when used in a horizontal stack panel.
 
-![SideBarLayout](https://raw.githubusercontent.com/s-innovations/S-Innovations.PortalFramework/master/docs/azure_portal_sidebar.png "SideBar Layout")
+![Sidebar Layout](https://raw.githubusercontent.com/s-innovations/S-Innovations.PortalFramework/master/docs/azure_portal_sidebar.png "Sidebar Layout")
 
 ## Example Code
 
-Using Typescript we can define the options and have them typecheked using a interface:
+Using Typescript we can define the options and have them type checked using an interface:
 ```
 
 import SideBarFavoritesViewModel = require("./sideBarFavorites/SideBarFavoritesViewModel");
@@ -37,9 +37,9 @@ interface AzurePortalSideBarLayoutOptions {
 
 export = AzurePortalSideBarLayoutOptions;
 ```
-and here the favorites property can be either a viewmodel or the options for the viewmodel which makes it easy to provide options from a JSON web service.
+and here the favorites property can be either a view model or the options for the view model which makes it easy to provide options from a JSON web service.
 
-The AzurePortalSideBarLayout then takes care of binding a view with assosiated viewmodels. 
+The AzurePortalSideBarLayout then takes care of binding a view with associated view models. 
 Using AMD dependency comments we can instruct the layout to be dependent on the needed view typical located in a subfolder called templates.
 Currently the layout also instructs that the singleClickBindingHandler is required from the. Its on the road map to make extensions such dependency comments can be used directly from the template markup also.
 
@@ -89,7 +89,7 @@ class AzurePortalSideBarLayout implements koLayout {
 export = AzurePortalSideBarLayout;
  
 ```
-and the assosiated template looks like this. From the template we have access to the layout using `$azurePortalSideBarLayout` due to the configuration in templateOptions.
+and the associated template looks like this. From the template we have access to the layout using `$azurePortalSideBarLayout` due to the configuration in templateOptions.
 ```
 
 <!-- <amd-dependency path="si-portal-framework/koExtensions/singleClickBindingHandler" /> -->
@@ -118,4 +118,5 @@ and the assosiated template looks like this. From the template we have access to
 ```
 
 and from the template it is also seen how one layout can depend on sub layouts. 
+
 
