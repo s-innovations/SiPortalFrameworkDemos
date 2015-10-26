@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.min.css" rel="stylesheet"/>
+    <script src="/libs/requirejs/require.js"></script>
+    <script>
+        require.config({
+            paths: {
+                "si-portal-framework":"/libs/si-portal-framework",               
+                "template": "libs/si-portal-framework/koExtensions/template",
+                "stringTemplateEngine": "libs/si-portal-framework/koExtensions/stringTemplateEngine",
+                "text": "libs/text/text",
+                "knockout": "libs/knockout/knockout",
+            }
+        });
+
+
+       
+
+        /// Azure Portal Demo
+        require(["libs/si-portal-framework/siPortal/siPortalLoader",
+            "libs/azure-portal/AzurePortalLayout",
+            "libs/si-portal-framework/koExtensions/verboseConsoleBindingErrorReporter"],
+            function (loader, AzurePortalLayout, helloWorldLayout) {
+
+                var root = new loader(
+                    {
+                        rootLayout: new AzurePortalLayout({
+                        }),
+                    });
+            });
+
+
+    </script>
+</head>
+<body class="si-theme-dark">
+    <!-- koLayout: $data -->
+</body>
+</html>

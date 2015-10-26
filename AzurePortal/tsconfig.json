@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "module": "amd",
+    "target": "es5",
+    "rootDir": "src",
+    "outDir": "artifacts/dev",
+    "experimentalDecorators": true
+  }, 
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "wwwroot"
+
+  ]
+}

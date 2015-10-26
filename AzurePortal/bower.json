@@ -1,0 +1,10 @@
+{
+  "name": "azure-portal-demo",
+  "private": true,
+  "dependencies": {},
+  "exportsOverride": {
+    "si-portal-framework": {
+      "": "dist/src"
+    }
+  }
+}
