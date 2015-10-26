@@ -1,6 +1,4 @@
 
-
-
 import ko = require("knockout");
 import setDefaultProperties = require("si-portal-framework/utils/setDefaultProperties");
 import constructorMapper = require("si-portal-framework/utils/constructorMapper");

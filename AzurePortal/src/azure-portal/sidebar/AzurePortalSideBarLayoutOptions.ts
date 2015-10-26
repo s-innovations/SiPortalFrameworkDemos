@@ -1,6 +1,4 @@
-
-
-
+         
 
 import SideBarFavoritesViewModel = require("./sideBarFavorites/SideBarFavoritesViewModel");
 import SideBarFavoritesViewModelOptions = require("./sideBarFavorites/SideBarFavoritesViewModelOptions");
